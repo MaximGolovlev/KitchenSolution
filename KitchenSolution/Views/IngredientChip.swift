@@ -31,7 +31,7 @@ struct IngredientChip: View {
             RoundedRectangle(cornerRadius: 15)
                 .stroke(isSelected ? Color.accentColor : Color.gray.opacity(0.3), lineWidth: 1)
         )
-        .scaleEffect(isSelected ? 1.05 : 1.0)
+        .scaleEffect(isSelected ? 1.02 : 1.0)
         .animation(.spring(response: 0.3), value: isSelected)
     }
 }

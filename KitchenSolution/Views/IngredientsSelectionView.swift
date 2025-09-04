@@ -23,17 +23,16 @@ struct IngredientsSelectionView: View {
                                 .font(.headline)
                                 .foregroundColor(.textPrimary)
                                 .padding(.horizontal)) {
-                                LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
-                                    ForEach(ingredients) { ingredient in
-                                        IngredientChip(ingredient: ingredient, 
-                                                     isSelected: recipeVM.selectedIngredients.contains(ingredient))
-                                            .onTapGesture {
-                                                recipeVM.toggleIngredientSelection(ingredient)
-                                            }
+                                    LazyVGrid(columns: Array(repeating: GridItem(.flexible()), count: 3), spacing: 10) {
+                                        ForEach(ingredients) { ingredient in
+                                            IngredientChip(ingredient: ingredient, isSelected: recipeVM.selectedIngredients.contains(ingredient))
+                                                .onTapGesture {
+                                                    recipeVM.toggleIngredientSelection(ingredient)
+                                                }
+                                        }
                                     }
+                                    .padding(.horizontal)
                                 }
-                                .padding(.horizontal)
-                            }
                         }
                     }
                 }
