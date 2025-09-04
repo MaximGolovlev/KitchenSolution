@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "264546vegan-overnight-oats-with-chia-seeds-and-fruitKim4x3-e43f71ee6e99423abbaab17d26655f39.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
